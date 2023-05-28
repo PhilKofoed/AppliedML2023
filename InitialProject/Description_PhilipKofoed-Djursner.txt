@@ -1,0 +1,25 @@
+1. Classification_PhilipKofoed-Djursner_lightgbm.txt:
+	Algorithm: Lightgbm LGBMClassifier
+	Key HP values: min_child_samples=333, num_leaves=88
+	HP optimisation: Used BayesianOptimization which optimized the cross validation score based on "roc_auc" over 5 cross validations
+	Parameters in model: didn't know how to measure
+ 	Loss function and value on validation set: -0.198 (neg log loss with 5-fold cross validation)
+ 	Own evaluation: Good model, variable choice optimised with feature importance over three runs 165 to 60, 60 to 35, and 35 to 15. To give information which was cshared between variables an opportunity to present itself
+
+2. Regression_PhilipKofoed-Djursner_lightgbm.txt:
+	Algorithm: Lightgbm LGBMRegressor
+	Key HP values: min_child_samples=30, num_leaves=34
+	HP optimisation: Used BayesianOptimization which optimized the cross validation score based on "neg_mean_absolute_error" over 5 cross validations
+	Parameters in model: didn't know how to measure
+ 	Loss function and value on validation set: -6113 (neg mean absolute loss with 5-fold cross validation)
+ 	Own evaluation: Good model, variable choice optimised with feature importance.
+
+3. Clustering_PhilipKofoed-Djursner_DBSCAN.txt:
+	Algorithm: SKlearn DBSCAN
+	Key HP values: eps=0.5
+	HP optimisation: Tried saome differnet HPs
+	Parameters in model: didn't know how to measure
+ 	Loss function and value on validation set: no test done
+ 	Own evaluation: Useless model
+
+	
