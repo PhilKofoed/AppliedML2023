@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
 from importlib import reload
-sys.path.append(r'\..')
+sys.path.append(r'./')
 import External_functions
 reload(External_functions)
 from External_functions import run_bayesian_opt_lightgbm
